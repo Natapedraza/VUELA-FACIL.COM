@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "autenticacionUsuarios",
 ]
 
 MIDDLEWARE = [
@@ -75,9 +76,14 @@ WSGI_APPLICATION = 'Vuelafacil.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'vuela-facil',
+        'USER': 'root',
+        'PASSWORD': 'recordarparaSQL',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
+
 }
 
 
