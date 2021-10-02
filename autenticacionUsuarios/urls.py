@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import user_detail
+from .views import agency_detail#, user_detail
 
 urlpatterns = [
-    path('<int:id>/', user_detail)
+    #path('usuario/<int:id>/', user_detail),
+    path('agencia/<int:id>/', agency_detail),
 ]
