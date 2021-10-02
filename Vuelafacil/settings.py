@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Vuelafacil.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [(str(BASE_DIR) + '\\Vuelafacil\\templates' ) ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,15 +76,11 @@ WSGI_APPLICATION = 'Vuelafacil.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'vuela-facil',
-        'USER': 'root',
-        'PASSWORD': 'recordarparaSQL',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
-
 }
+
 
 
 # Password validation
