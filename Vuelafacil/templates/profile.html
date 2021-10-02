@@ -1,22 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <meta name= "description" content= "VUELA - FACIL">
+    <title>PERFIL DE VUELA - FACIL</title>
 </head>
 <body>
-    
+  <style>
+.menudelheader{
+  background-image:url("file:///C:/Users/rosario/Downloads/color%20azul%20solido.jpg");
+}
 
+.redondear{
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+}
 
-    {{user.nombre}}
-    {{user.apellido}}
+.redesSociales{
+  list-style: none;
+  text-align: center;
+  padding:0;
+}
 
+.icon{
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.facebook{
+background-image: url("file:///C:/Users/rosario/Downloads/icono%20facebook.png");
+}
+
+.instagram{
+background-image: url("file:///C:/Users/rosario/Downloads/icono%20instagram.png");
+}
+
+.twitter{
+background-image: url("file:///C:/Users/rosario/Downloads/icono%20twitter.png");
+}
+
+.youtube{
+background-image: url("file:///C:/Users/rosario/Downloads/icono%20youtube.png");
+}
+
+  </style>
+  <div class="menudelheader">
+    <p><strong>VUELA - FACIL(nombre empresa)(menu)</strong></p>
+  </div>
+<div>
+    <h1>EMPRESA S.A</h1>
+
+    <img
+    class="redondear"
+    src="file:///C:/Users/rosario/Downloads/foto%20avion.jpg" alt="">
+    </div>
+    <div>
+    <nav>
+      <ul class="redesSociales">
+        <li>
+          <a href="#">{{nombre2}}</a>
+        </li>
+        <li>
+          <a href="#">{{apellido2}}</a>
+        </li>
+        <li>
+          <a href="#">{{descripcion}}</a>
+        </li>
+        <li>
+          <a href="#">{{telefono}}</a>
+        </li>
+        <li>
+          <a href="#">{{direccion}}</a>
+        </li>
+        <li>
+          <a href="#">{{correo}}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</body>
+<footer> <i>Vuela-Facil S.A
+  <li>
+    <i class="icon facebook"></i>
+    <a href="#">Facebook</a>
+  </li>
+  <li>
+    <i class="icon instagram"></i>
+    <a href="#">Instagram</a>
+  </li>
+  <li>
+    <i class="icon twitter"></i>
+    <a href="#">Twitter</a>
+  </li>
+  <li>
+    <i class="icon youtube"></i>
+    <a href="#">Youtube</a>
+  </li></i></footer>
+<h2><i>terminos y condiciones políticas cookies políticas privacidad </i></h2>
+</html>
    <!-- {{user.telefono}}
     {{user.direccion}}
     {{user.correo}}-->
-
-
-</body>
-</html>
