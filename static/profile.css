@@ -1,0 +1,108 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/*header*/
+
+.header{
+  width: 100vw;
+}
+ 
+/*main*/
+
+main{
+  display:flex;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.imagen-perfil{
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0,0.25) ;
+  margin: 0 5em;
+}
+
+.agencia{
+  margin-bottom: 1em;
+}
+
+.detalle{
+  width: 50vw;
+  list-style: none;
+}
+
+.detalle_label{
+  display: flex;
+}
+
+.detalle_label i{
+  margin: 0 1em;
+}
+
+.detalle p{
+  margin:1em;
+}
+
+.hidden{
+  display: none;
+}
+
+/*footer*/
+
+footer{
+  width: 100vw;
+  position: relative;
+  bottom: 0;
+}
+
+.redesSociales{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  padding:1em;
+}
+  
+  .icon{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-size: cover;
+  }
+  
+  .facebook{
+  background-image: url("file:///C:/Users/rosario/Downloads/icono%20facebook.png");
+  }
+  
+  .instagram{
+  background-image: url("file:///C:/Users/rosario/Downloads/icono%20instagram.png");
+  }
+  
+  .twitter{
+  background-image: url("file:///C:/Users/rosario/Downloads/icono%20twitter.png");
+  }
+  
+  .youtube{
+  background-image: url("file:///C:/Users/rosario/Downloads/icono%20youtube.png");
+  }
+  
+.copyrigth{
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+}
