@@ -16,11 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from .views import hola_mundo
-from registroUsuarios import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hola/', hola_mundo),
     path('accounts/', include('autenticacionUsuarios.urls')),
-    path('registro_usuario/', views.registro_usuario)
 ]
