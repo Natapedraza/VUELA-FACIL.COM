@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for object in object_list %}
+    <!-- Display Objects -->
+    <li>{{ object.codigoRuta }}</li>
+    <li>{{ object.ciudadOrigen }}</li>
+    <li>{{ object.ciudadDestino }}</li>
+    <li>{{ object.precio }}</li>
+    <li>{{ object.fechaIda }}</li>
+    <li>{{ object.fechaVuelta }}</li>
+    <li>{{ object.descuento }}</li>
+  
+    <hr/>
+    <!-- If object_list is empty  -->
+    {% empty %}
+    <li>No objects yet.</li>
+    {% endfor %}
+
+</body>
+</html>
