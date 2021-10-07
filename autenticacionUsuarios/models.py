@@ -17,6 +17,9 @@ class Agencia(models.Model):
     terminos_condiciones = models.BooleanField(null=True)
     fecha_creacion = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return f"nombre:{self.nombre}, correo:{self.correo}"
+
 
 class Usuario(models.Model):
     
@@ -30,3 +33,7 @@ class Usuario(models.Model):
     correo = models.EmailField(max_length=80)
     terminos_condiciones = models.BooleanField(null=True)
     fecha_creacion = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"nombre:{self.nombre}, correo:{self.correo}"
+

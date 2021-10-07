@@ -14,3 +14,7 @@ class RegisterUserForm(forms.Form):
     confirmacion_contraseña= forms.CharField(widget=forms.PasswordInput)
     agencia= forms.BooleanField(required=False)
     usuario= forms.BooleanField(required=False)
+
+class LoginUserForm(forms.Form):
+    correo=forms.EmailField()
+    contraseña=forms.CharField(widget=forms.PasswordInput)
