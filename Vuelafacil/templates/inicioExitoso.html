@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion Iniciada</title>
+    <link rel="stylesheet" href="{% static '/inicioExitoso.css/' %}">
+</head>
+<body>
+    <h1 class="centrandoAndo">Has iniciado sesion exitosamente!</h1>
+    <img style="background:white;"
+     class="centrandoAndo" src="{% static '/chulo.png/' %}" alt="">
+
+     <a href='/accounts/{{user_or_agency}}/{{id}}/edit/'><button class="centrandoAndo" type="submit" >Aceptar</button></a>
+     
+
+</body>
+</html>

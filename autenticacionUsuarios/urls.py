@@ -1,6 +1,10 @@
 from django.urls import path
-from .views import user_detail
+from .views import agency_delete, agency_detail_edit, registro_usuario, iniciar_usuario
 
 urlpatterns = [
-    path('<int:id>/', user_detail)
+    path('<str:user_or_agency>/<int:id>/edit/', agency_detail_edit, name="agencyProfile"),
+    path('register/', registro_usuario),
+    path('delete/<int:id>/', agency_delete),
+    path('login/', iniciar_usuario), 
+    
 ]
