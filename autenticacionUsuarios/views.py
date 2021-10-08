@@ -5,7 +5,6 @@ from autenticacionUsuarios.forms import EditProfileForm, LoginUserForm, Register
 
 # create users
 
-
 def registro_usuario(request):
 
     if request.method == "POST":
@@ -44,7 +43,7 @@ def registro_usuario(request):
 
                 user.save()
 
-                return redirect('/accounts/register/success/')
+                return render(request,'registroExitoso.html')
             else:
                 return redirect('/accounts/register/')
 

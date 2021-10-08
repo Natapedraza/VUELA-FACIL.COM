@@ -58,7 +58,7 @@ ROOT_URLCONF = 'Vuelafacil.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [(str(BASE_DIR) + '/Vuelafacil/templates' ) ],
+        'DIRS': [(str(BASE_DIR) + '/Vuelafacil/templates' )],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
