@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/registrar.css' %}">
 </head>
 <body>
-    <form action="/accounts/register/" method="POST">
+    <form class="form" action="/accounts/register/" method="POST">
         {% csrf_token %}
         {% for field in formulario %}
             {{ field.label }}
             {{ field}}
             <br>
         {% endfor %}
-        <input type="submit" value="Registrarse">
+        <input class="button" type="submit" value="Registrarse">
     </form>
 </body>
 </html>
