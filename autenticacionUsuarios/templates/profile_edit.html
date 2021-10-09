@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="VUELA - FACIL" />
-    <title>PERFIL DE VUELA - FACIL</title>
-    <link type="text/css" rel="stylesheet" href='{% static "profile.css" %}' />
+    <title>Perfil agencia</title>
+    <link type="text/css" rel="stylesheet" href='{% static "css/profile.css" %}' />
   </head>
 
   <body>
@@ -16,18 +16,18 @@
     </header>
     <main>
       <div>
-        <img class="imagen-perfil" src="{% static 'Avianca.png'%}" alt="" />
+        <img class="imagen-perfil" src="{% static 'imagenes/Avianca.png'%}" alt="" />
       </div>
 
       <div>
-        <h1 class="agencia">{{usuario.nombre | upper}}</h1>
+        <h1 class="agencia">{{agencia.nombre | upper}}</h1>
 
-        <form action="/accounts/usuario/{{usuario.id}}/edit/" method="POST">
+        <form action="/accounts/agencia/{{agencia.id}}/edit/" method="POST">
           <ul class="detalle">
             
             {% csrf_token %}
 
-            {% for usuarioData, field in usuario_formulario %}
+            {% for agenciaData, field in agencia_formulario %}
               <li>
                 <div class="detalle_label">
                   <h3>{{field.label}}</h3>
@@ -35,13 +35,13 @@
                 </div>
                 <p class="input_formulario hidden">{{field}}</p>
                 <button type="submit" class="btnSubmit hidden">Cambiar</button>
-                <p class="data_agencia">{{usuarioData}}</p>
+                <p class="data_agencia">{{agenciaData}}</p>
               </li>
             {% endfor %}
 
           </ul>
         </form>
-        <a href="/accounts/delete/{{usuario.id}}">
+        <a href="/accounts/delete/{{agencia.id}}">
           <button type="submit"> Delete Account </button>
         </a>
       </div>
@@ -70,6 +70,6 @@
       <p class="copyrigth">Vuela-facil.com - todos los derechos reservados</p>
     </footer>
 
-    <script src="{% static 'profile.js' %}"></script>
+    <script src="{% static 'js/profile.js' %}"></script>
   </body>
 </html>

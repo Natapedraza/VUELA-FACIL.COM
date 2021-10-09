@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrarse</title>
+    <title>Buscador Rutas</title>
 </head>
 <body>
-    <form action="/accounts/register/" method="POST">
+    <form class="form" action="/buscadorRutas/Buscador/" method="POST">
         {% csrf_token %}
-        {% for field in formulario %}
+        {% for field in buscador %}
             {{ field.label }}
             {{ field}}
             <br>
         {% endfor %}
-        <input type="submit" value="Registrarse">
+        <input class="button" type="submit" value="Buscar">
     </form>
 </body>
 </html>

@@ -1,8 +1,7 @@
 from django.urls import path
-from .views import RutasEncontradas, holamundo
+from .views import RutasEncontradas, buscarRutas
 
 urlpatterns = [
-    path('saludo/',holamundo),
     path("Encontradas/",RutasEncontradas.as_view()),
-    
+    path('Buscador/',buscarRutas),
 ]

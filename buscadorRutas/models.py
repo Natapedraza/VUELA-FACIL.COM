@@ -10,3 +10,6 @@ class Ruta(models.Model):
     fechaIda = models.DateField()
     fechaVuelta = models.DateField()
     descuento = models.FloatField()
+
+    def __str__(self) -> str:
+        return f'codigoRuta:{self.codigoRuta} ciudadOrigen:{self.ciudadOrigen} precio:{self.precio}' 
