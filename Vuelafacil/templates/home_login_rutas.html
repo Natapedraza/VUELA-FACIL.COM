@@ -4,9 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="VUELA - FACIL" />
+    <title>Visualización rutas</title>
+    
 </head>
+<style type= "text/css">
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+
+    th {
+        text-align: left;
+    }
+
+    body{
+        font-family: Arial;
+    }
+
+    #main-container{
+        margin: 0px auto;
+        width: 600px;
+    }
+    
+</style>
 <body>
+
+    <header>
+        <h1><strong>VUELA - FACIL(nombre empresa)(menu)</strong></h1>
+    </header>
+
+    <main>
+        
+        <table style="width: 65%">
+            <tr>
+                <th>primer elemento socio</td>
+                <th> prueba 1.1</td>  
+                <th> columna 3.1</td>  
+            </tr>
+            <tr>
+                <td>elemento prueba numero s2</td>
+                <td> prueba 1.2 </td>    
+                <td> columna 3.2 siu siu</td>    
+            </tr>
+            <tr>
+                <td>elemento prueba numero 3</td>
+                <td> prueba 1.3 </td>
+                <td> columna 3.3</td>  
+            </tr>
+        </table>
+        <br>
+        
+        <table style="width: 65%">
+        <tr>
+            <th>tabla numero 1 elementoz</td>
+            <th> prueba 1.2</td>  
+            <th> munitez 3.1</td>  
+        </tr>
+        <tr>
+            <td>tabla numero 2 elementoz</td>
+            <td> prueba 1.3 </td>    
+            <td> minitez 3.2</td>    
+        </tr>
+        <tr>
+            <td>tabla numero 3 elementoz</td>
+            <td> prueba 1.4 </td>
+            <td> minitez 3.3</td>  
+        </tr>
+        </table>
+        <br>
+        
+        <table style="width: 65%">
+            <tr>
+                <th>tabla numero 1 elementoz</td>
+                <th> prueba 1.2</td>  
+                <th> munitez 3.1</td>  
+            </tr>
+            <tr>
+                <td>tabla numero 2 elementoz</td>
+                <td> prueba 1.3 </td>    
+                <td> minitez 3.2</td>    
+            </tr>
+            <tr>
+                <td>tabla numero 3 elementoz</td>
+                <td> prueba 1.4 </td>
+                <td> minitez 3.3</td>  
+            </tr>
+            </table>
+            <br>
+
+            <table style="width: 65%">
+                <tr>
+                    <th>tabla numero 1 elementoz</td>
+                    <th> prueba 1.2</td>  
+                    <th> munitez 3.1</td>  
+                </tr>
+                <tr>
+                    <td>tabla numero 2 elementoz</td>
+                    <td> prueba 1.3 </td>    
+                    <td> minitez 3.2</td>    
+                </tr>
+                <tr>
+                    <td>tabla numero 3 elementoz</td>
+                    <td> prueba 1.4 </td>
+                    <td> minitez 3.3</td>  
+                </tr>
+                </table>
+                <br>
+
+    </main>
+    
+    <article>      
     {% for object in object_list %}
     <!-- Display Objects -->
     <li>{{ object.codigoRuta }}</li>
@@ -22,6 +135,28 @@
     {% empty %}
     <li>No objects yet.</li>
     {% endfor %}
-
+    </article>
+            
+    <footer>
+        <ul class="">
+          <li>
+            <i class="icon facebook"></i>
+            <a href="#">Facebook</a>
+          </li>
+          <li>
+            <i class="icon instagram"></i>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <i class="icon twitter"></i>
+            <a href="#">Twitter</a>
+          </li>
+          <li>
+            <i class="icon youtube"></i>
+            <a href="#">Youtube</a>
+          </li>
+        </ul>
+        <p class="">Vuela-facil.com - todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
